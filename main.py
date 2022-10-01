@@ -26,8 +26,8 @@ def compra_axie(ax):
             listing_inx = bb['data']['axie']['auction']['listingIndex']
             listing_stat = bb['data']['axie']['auction']['state']
             price = bb['data']['axie']['auction']['currentPrice']
-
-            myaddrs = Web3.toChecksumAddress('0x0000000000000000000000000000000000000000') # your addrss
+            
+            
             seller_addrs = Web3.toChecksumAddress(seller)
             token_adrss = Web3.toChecksumAddress('0xc99a6a985ed2cac1ef41640596c5a5f9f4e19ef5')
             price = int(price)
