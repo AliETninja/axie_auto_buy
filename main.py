@@ -134,7 +134,7 @@ while(True):
                             weth = int(content2['decodedInput']['params'][3]['value'][0]) / 1000000000000000000
                             preco =  int(content2['decodedInput']['params'][3]['value'][0]) / 1000000000000000000
 
-                            if preco <= 0.0052 and len(str(preco)) < 8:
+                            if preco <= 0.0052 and len(str(preco)) < 8: # your price preference
                                 print('axie encontrado: \nhttps://marketplace.axieinfinity.com/axie/{}\nvalue: {}'.format(link, preco))
                                 eita = compra_axie(link)
 
