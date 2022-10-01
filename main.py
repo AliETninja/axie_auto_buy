@@ -51,7 +51,7 @@ def compra_axie(ax):
             transfer_txn = contract.functions.settleAuction(seller_addrs, token_adrss, price, listingIndex,
                                                             listingState,
                                                             Web3.toChecksumAddress(
-                                                                '0x40c3b05ca1391dcb30fff6163c32078d051a57b4')).buildTransaction(
+                                                                '0x0000000000000000000000000000000000000000')).buildTransaction(
                 {
                     'chainId': 2020,
                     'gas': 3000000,
