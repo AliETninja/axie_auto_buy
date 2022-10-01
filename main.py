@@ -105,7 +105,7 @@ def img_axie(axie_id):
     return a['data']['axie']['image']
 
 while(True):
-    block_id = requests.get('https://api.covalenthq.com/v1/2020/block_v2/latest/?key=ckey_f338f25856a8461b918209059d5')
+    block_id = requests.get('https://api.covalenthq.com/v1/2020/block_v2/latest/?key=your_api_key')
     poar = block_id.json()
     block_id = int(poar['data']['items'][0]['height']) + 5
 
